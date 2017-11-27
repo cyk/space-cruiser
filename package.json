@@ -1,0 +1,11 @@
+{
+  "name": "space-cruiser",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "cyk <cytklassen@gmail.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^3.8.1"
+  }
+}
