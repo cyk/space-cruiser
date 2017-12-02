@@ -1,11 +1,27 @@
 {
   "name": "space-cruiser",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "webpack-dev-server --open",
+    "build": "webpack"
+  },
   "author": "cyk <cytklassen@gmail.com>",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "@bower_components/webcomponentsjs": "webcomponents/webcomponentsjs#^v1.0.2"
+  },
   "devDependencies": {
-    "webpack": "^3.8.1"
+    "@bower_components/polymer": "Polymer/polymer#^2.2.0",
+    "@bower_components/shadycss": "webcomponents/shadycss#^v1.0.0",
+    "copy-webpack-plugin": "^4.2.3",
+    "date-fns": "^1.29.0",
+    "html-webpack-plugin": "^2.30.1",
+    "polymer-webpack-loader": "^2.0.0",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.4"
+  },
+  "engines": {
+    "yarn": ">= 1.0.0"
   }
 }
