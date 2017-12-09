@@ -1,1 +1,1 @@
-import './my-element/element';
+import './components/cruiser-app';

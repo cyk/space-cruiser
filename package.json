@@ -39,7 +39,8 @@
   },
   "jest": {
     "moduleNameMapper": {
-      "polymer/polymer-element.html": "<rootDir>/__mocks__/polymerElementMock.js"
+      "polymer/polymer-element.html": "<rootDir>/__mocks__/polymerElementMock.js",
+      "\\.html$": "<rootDir>/__mocks__/templateMock.js"
     }
   }
 }

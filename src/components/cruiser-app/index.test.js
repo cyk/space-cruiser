@@ -1,7 +1,7 @@
-import { MyElement } from './element';
+import { CruiserApp } from '.';
 
 describe('properties', () => {
-  const { properties } = MyElement;
+  const { properties } = CruiserApp;
 
   it('has today', () => {
     const actual = properties.today.value();
