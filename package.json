@@ -5,6 +5,7 @@
   "scripts": {
     "start": "webpack-dev-server --open",
     "build": "webpack",
+    "lint": "eslint src",
     "test": "jest"
   },
   "author": "cyk <cytklassen@gmail.com>",
@@ -21,6 +22,7 @@
     "copy-webpack-plugin": "^4.2.3",
     "css-loader": "^0.28.7",
     "date-fns": "^1.29.0",
+    "eslint": "^4.13.1",
     "html-webpack-plugin": "^2.30.1",
     "jest": "^21.2.1",
     "polymer-webpack-loader": "^2.0.1",
@@ -38,6 +40,32 @@
         ]
       }
     }
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 2015,
+      "sourceType": "module"
+    },
+    "globals": {
+      "customElements": false,
+      "Polymer": false
+    },
+    "extends": [
+      "eslint:recommended"
+    ],
+    "overrides": [
+      {
+        "files": [
+          "**/*.test.js"
+        ],
+        "env": {
+          "jest": true
+        }
+      }
+    ]
   },
   "jest": {
     "moduleNameMapper": {
