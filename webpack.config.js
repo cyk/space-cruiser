@@ -16,9 +16,16 @@ module.exports = {
   },
   module: {
     rules: [
-      {
-        test: /\.html$/,
-        use: 'polymer-webpack-loader'
+      { 
+        test: /\.css$/, 
+        use: 'css-loader' 
+      },
+      { 
+        test: /\.html$/, 
+        loader: 'polymer-webpack-loader', 
+        options: { 
+          processStyleLinks: true 
+        }
       }
     ]
   },

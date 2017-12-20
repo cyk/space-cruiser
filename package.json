@@ -15,13 +15,15 @@
   "devDependencies": {
     "@bower_components/polymer": "Polymer/polymer#^2.2.0",
     "@bower_components/shadycss": "webcomponents/shadycss#^v1.0.0",
+    "auroral": "LunarLogic/auroral",
     "babel-core": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
     "copy-webpack-plugin": "^4.2.3",
+    "css-loader": "^0.28.7",
     "date-fns": "^1.29.0",
     "html-webpack-plugin": "^2.30.1",
     "jest": "^21.2.1",
-    "polymer-webpack-loader": "^2.0.0",
+    "polymer-webpack-loader": "^2.0.1",
     "webpack": "^3.8.1",
     "webpack-dev-server": "^2.9.4"
   },

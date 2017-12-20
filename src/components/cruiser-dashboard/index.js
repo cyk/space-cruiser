@@ -1,9 +1,12 @@
 import 'polymer/polymer-element.html';
+import './template.html';
 
-export class CruiserDashboard extends Polymer.Element {
+const { Element, DomModule } = Polymer;
+
+export class CruiserDashboard extends Element {
   static get is() { return 'cruiser-dashboard'; }
-  static get template() {       
-    return "<div>I'm a dashboard, yo!</div>";
+  static get template() {
+    return DomModule.import(CruiserDashboard.is, 'template')
   }
   static get properties() {}
 }

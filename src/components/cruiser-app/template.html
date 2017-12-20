@@ -1,6 +1,13 @@
 <dom-module id="cruiser-app">
   <template>
-      <h1>Hello, World! It's [[today]].</h1>
+    <style>
+      :host {
+        height: 100vh;
+      }
+    </style>
+    <cruiser-scene>
+      <cruiser-mirror></cruiser-mirror>
       <cruiser-dashboard></cruiser-dashboard>
+    </cruiser-scene>
   </template>
 </dom-module>
