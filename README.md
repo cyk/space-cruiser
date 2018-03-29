@@ -1,6 +1,6 @@
 # Space Cruiser
 
-Bowerless Polymer 2 with WebPack
+Bowerless Polymer 2 with Webpack (experiment)
 
 ```sh
 $ yarn install
